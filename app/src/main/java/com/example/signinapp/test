@@ -1,0 +1,9 @@
+
+        val btnEnd = findViewById<Button>(R.id.btn_end)
+        btnEnd.setOnClickListener() {
+val txtGetData = findViewById<TextView>(R.id.tv_2)
+
+val signUpId = intent.getStringExtra("SignUpID")
+
+        if (!signUpId.isNullOrEmpty()) {
+            txtGetData.text = "ID: $signUpId"
